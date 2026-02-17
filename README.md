@@ -71,3 +71,32 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Capacitor (Android/iOS)
+
+Deze repo is voorbereid voor Capacitor met `dist` als `webDir`.
+
+### Eenmalige setup
+
+```sh
+npm install
+npx cap add android
+npx cap add ios
+```
+
+### Dagelijkse flow
+
+```sh
+npm run cap:sync
+npm run android
+npm run ios
+```
+
+### Routing keuze
+
+Voor mobiele WebView deep links/refresh is de app overgezet naar `HashRouter` (`/#/route`).
+Dat voorkomt 404/fallback-problemen zonder extra native webserver rewrites.
+
+### Assets
+
+Zie `resources/README.md` voor icon/splash placeholders en vervanging.
