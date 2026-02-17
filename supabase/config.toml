@@ -1,0 +1,13 @@
+project_id = "uobmevebyishwvaelrry"
+
+[functions.promote-to-admin]
+verify_jwt = false
+
+[functions.ocr-frame-number]
+verify_jwt = false
+
+[functions.verify-admin-password]
+verify_jwt = false
+
+[functions.hash-password]
+verify_jwt = false
